@@ -59,7 +59,7 @@ def load_config(file):
 
 def MockRequests(url, data=None, timeout=None):
     if url == "https://api.github.com/repos/test/test_repo/commits/abcdef":
-        return MockResponse({}, 200)    
+        return MockResponse({}, 200)
     elif url == "https://api.github.com/user":
         return MockResponse({"login": "test"}, 200)
     elif "https://api.github.com/user" in url:
